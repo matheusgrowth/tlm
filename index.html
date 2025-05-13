@@ -1,0 +1,227 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Contratos - TLM Equipamentos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/extenso/2.0.1/extenso.min.js"></script>
+    <script>
+        window.extenso = typeof extenso !== 'undefined' ? extenso : function(num) { return String(num); };
+    </script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="equipment-database.js"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "./js/utils.js": "./js/utils.js",
+        "./js/ui-components.js": "./js/ui-components.js",
+        "./js/form-handlers.js": "./js/form-handlers.js",
+        "./js/contract-generator.js": "./js/contract-generator.js"
+      }
+    }
+    </script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <header>
+        <div class="top-header">
+            <div class="logo-container">
+                <img src="/TLM Logo H.png" alt="TLM Equipamentos Logo" class="logo">
+                <h1>TLM Equipamentos</h1>
+            </div>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-step active" id="step1">
+                <div class="step-number">1</div>
+                <span>Comprador</span>
+            </div>
+            <div class="progress-line"></div>
+            <div class="progress-step" id="step2">
+                <div class="step-number">2</div>
+                <span>Equipamento</span>
+            </div>
+            <div class="progress-line"></div>
+            <div class="progress-step" id="step3">
+                <div class="step-number">3</div>
+                <span>Pagamento</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="step-container" id="step1-container">
+            <div class="step-header">
+                <i class="fas fa-user"></i>
+                <h2>Informações do Comprador</h2>
+            </div>
+            <form id="buyer-form" autocomplete="off">
+                <div class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" required autocomplete="off">
+                    <span class="validation-message"></span>
+                </div>
+                <div class="form-row-group">
+                    <div class="form-group">
+                        <label for="cpf">CPF *</label>
+                        <input type="text" id="cpf" placeholder="000.000.000-00" required autocomplete="off">
+                        <span class="validation-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="cnpj">CNPJ *</label>
+                        <input type="text" id="cnpj" placeholder="00.000.000/0000-00" required autocomplete="off">
+                        <span class="validation-message"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inscricao_estadual">Inscrição Estadual *</label>
+                    <input type="text" id="inscricao_estadual" required autocomplete="off">
+                    <span class="validation-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço Completo *</label>
+                    <textarea id="endereco" required></textarea>
+                    <span class="validation-message"></span>
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="step1-next" class="btn next-btn" disabled>Próximo</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="step-container" id="step2-container" style="display: none;">
+            <div class="step-header">
+                <i class="fas fa-cogs"></i>
+                <h2>Informações do Equipamento</h2>
+            </div>
+            <form id="equipment-form" autocomplete="off">
+                <div class="form-group">
+                    <label for="tipo_equipamento">Tipo de Equipamento *</label>
+                    <select id="tipo_equipamento" required>
+                        <option value="">Selecione o tipo</option>
+                        <option value="Empilhadeira">Empilhadeira</option>
+                        <option value="Carregadeira">Carregadeira</option>
+                    </select>
+                    <span class="validation-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="modelo">Modelo *</label>
+                    <select id="modelo" required disabled>
+                        <option value="">Selecione o modelo</option>
+                    </select>
+                    <span class="validation-message"></span>
+                </div>
+                <div class="equipment-details" id="equipment-details"></div>
+                <div class="form-group">
+                    <label for="quantidade">Quantidade *</label>
+                    <input type="number" id="quantidade" min="1" value="1" required autocomplete="off">
+                    <span class="validation-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="adicionais">Extras / Adicionais</label>
+                    <textarea id="adicionais"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="step2-prev" class="btn prev-btn">Voltar</button>
+                    <button type="button" id="step2-next" class="btn next-btn" disabled>Próximo</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="step-container" id="step3-container" style="display: none;">
+            <div class="step-header">
+                <i class="fas fa-dollar-sign"></i>
+                <h2>Forma de Pagamento</h2>
+            </div>
+            <form id="payment-form" autocomplete="off">
+                <div class="payment-row">
+                    <div class="form-group small-group">
+                        <label for="valor_total">Valor Total *</label>
+                        <input type="text" id="valor_total" required class="money-input" autocomplete="off">
+                        <span class="validation-message"></span>
+                    </div>
+                    <div class="form-group small-group">
+                        <label for="valor_sinal">Entrada/Sinal *</label>
+                        <input type="text" id="valor_sinal" required class="money-input" autocomplete="off">
+                        <span class="validation-message"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="valor_saldo">Saldo Restante</label>
+                    <input type="text" id="valor_saldo" readonly class="money-input" tabindex="-1" style="background:#f4f4f4; pointer-events:none;">
+                </div>
+                <div class="form-group">
+                    <label>Opções de Pagamento *</label>
+                    <div class="payment-options">
+                        <div class="payment-option">
+                            <input type="radio" id="pix" name="payment_method" value="PIX" checked>
+                            <label for="pix"><i class="fas fa-qrcode"></i> PIX</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="cartao" name="payment_method" value="Cartão de Crédito">
+                            <label for="cartao"><i class="fas fa-credit-card"></i> Cartão de Crédito (até 12x)</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="transferencia" name="payment_method" value="Transferência Bancária">
+                            <label for="transferencia"><i class="fas fa-university"></i> Transferência Bancária</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="terms-box">
+                    <h3>Multas e Juros</h3>
+                    <ul>
+                        <li>Atrasos no pagamento acarretarão multa de 5%</li>
+                        <li>Juros de mora de 1% ao mês</li>
+                        <li>Correção monetária pelo IGPM</li>
+                    </ul>
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="step3-prev" class="btn prev-btn">
+                        <i class="fas fa-arrow-left"></i> Voltar
+                    </button>
+                    <button type="button" id="generate-contract" class="btn generate-btn">
+                        <i class="fas fa-file-contract"></i> Gerar Contrato
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div id="success-container" style="display: none;">
+            <div class="success-message">
+                <i class="fas fa-check-circle"></i>
+                <h2>Contrato Gerado com Sucesso!</h2>
+                <p>Seu contrato está pronto. Clique abaixo para fazer o download.</p>
+                <button id="download-contract" class="btn download-btn">
+                    <i class="fas fa-download"></i> Download do Contrato
+                </button>
+                <button id="new-contract" class="btn new-btn">
+                    <i class="fas fa-plus"></i> Novo Contrato
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 TLM Equipamentos - Todos os direitos reservados</p>
+    </footer>
+
+    <div id="loading-overlay" style="display: none;">
+        <div class="spinner"></div>
+        <p>Gerando seu contrato...</p>
+    </div>
+
+    <div id="pdf-preview" style="display: none;">
+        <!-- PDF preview container -->
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

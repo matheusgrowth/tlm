@@ -1,0 +1,95 @@
+CONTRATO DE COMPRA E VENDA DE MÁQUINAS E EQUIPAMENTOS
+VENDEDORA: BTI COMEX IMPORTAÇÃO, EXPORTAÇÃO E DISTRIBUIÇÃO LTDA, inscrita no CNPJ sob nº 17.692.604/0001-49, com sede na R. Gen. Liberato Bittencourt, 1475, Salas 710/711/712 - Edifício Globo Tower, Bairro Canto, Florianópolis - SC, CEP 88080-160, representada por seu administrador FELIPE DUARTE SILVA, doravante denominada VENDEDORA.
+COMPRADOR(A): {{NOME_COMPRADOR}}, inscrito(a) no CPF/CNPJ nº {{CPF_CNPJ_COMPRADOR}}, IE {{INSCRICAO_ESTADUAL}}, domiciliado(a) em {{ENDERECO_COMPLETO}}, doravante denominado(a) COMPRADOR(A).
+DISPOSIÇÕES PRELIMINARES
+Considerando as atividades comerciais das partes, ajustam o presente contrato de COMPRA E VENDA DE MÁQUINAS conforme as cláusulas seguintes, vinculando as partes e seus sucessores.
+OBJETO
+Cláusula 1ª. O objeto deste contrato é {{QUANTIDADE}} ({{QUANTIDADE_EXTENSO}}) {{TIPO_EQUIPAMENTO}} - Marca {{MARCA}}, Modelo {{MODELO}}, ano {{ANO_FABRICACAO}}, com peso operacional de {{PESO_OPERACIONAL}} kg, capacidade de carga de {{CAPACIDADE_CARGA}} kg, motor {{MARCA_MOTOR}}, potência {{POTENCIA_CV}} CV, {{DESCRICAO_ADICIONAIS}}, importado pela VENDEDORA.
+Cláusula 2ª. O(a) COMPRADOR(A) declara ciência de que o bem objeto deste contrato é fabricado no exterior e importado pela VENDEDORA.
+PREÇO E FORMA DE PAGAMENTO
+Cláusula 3ª. O COMPRADOR pagará à VENDEDORA, pela aquisição do equipamento descrito, o valor de R$ {{VALOR_TOTAL}} ({{VALOR_TOTAL_EXTENSO}}).
+Cláusula 4ª. O pagamento ocorrerá conforme abaixo:
+* Entrada de R$ {{VALOR_SINAL}} ({{VALOR_SINAL_EXTENSO}}), como sinal, mediante depósito, na data da assinatura deste contrato. O pedido será efetivado após o pagamento integral do sinal.
+* Saldo restante de R$ {{VALOR_SALDO}} ({{VALOR_SALDO_EXTENSO}}) deverá ser quitado na data da comunicação da disponibilidade para retirada do equipamento. O pagamento poderá ser feito via cartão de crédito em até 12 parcelas com juros da operadora, carta de crédito contemplada ou transferência bancária/PIX.
+MULTA E JUROS
+Cláusula 5ª. Atrasos no pagamento acarretarão multa de 5%, juros de mora de 1% ao mês e correção monetária pelo IGPM.
+OBRIGAÇÕES DO(A) COMPRADOR(A)
+Cláusula 6ª. O(a) COMPRADOR(A) se obriga a:
+* Efetuar o pagamento integral;
+* Arcar com eventuais encargos e despesas incidentes, inclusive diferença de alíquota interestadual;
+* Retirar o bem em até 72 horas após liberação no endereço: Rua Januário Pereira de Lima, 1025 - Guarda do Cubatão, Palhoça - SC, CEP 88135-380.
+OBRIGAÇÕES DA VENDEDORA
+Cláusula 7ª. A VENDEDORA se obriga a:
+* Disponibilizar o equipamento livre de ônus;
+* Comunicar ao COMPRADOR sobre a disponibilidade do equipamento para retirada, após pagamento integral.
+GARANTIA E RESPONSABILIDADES
+Cláusula 8ª. A VENDEDORA oferece garantia contratual do fabricante conforme Termo de Garantia descrito a seguir, não respondendo por danos decorrentes de uso inadequado, mau uso ou modificações não autorizadas do equipamento.
+CONDIÇÕES GERAIS
+Cláusula 9ª. Após a entrega do equipamento, o(a) COMPRADOR(A) é responsável por todas as despesas, taxas, impostos, licenciamento e transferências futuras do bem.
+RESCISÃO DO CONTRATO
+Cláusula 10ª. O contrato poderá ser rescindido pelo(a) COMPRADOR(A) até a data do pagamento do sinal.
+Cláusula 11ª. Em caso de rescisão após pagamento do sinal e antes da entrega, haverá multa equivalente ao valor do sinal pago, sem direito a reembolso.
+Cláusula 12ª. Após pagamento integral, não será possível a rescisão unilateral pelo(a) COMPRADOR(A).
+Cláusula 13ª. Atraso superior a 7 dias úteis no pagamento configurará desistência, aplicando-se multa equivalente ao sinal avençado (30%), acrescidos de juros e multas.
+Cláusula 14ª. A VENDEDORA poderá rescindir o contrato a qualquer tempo, devendo restituir ao COMPRADOR o valor já pago corrigido pelo INPC.
+
+
+Cláusula 15ª. TERMO DE GARANTIA EQUIPAMENTO TLM
+Doravante denominada empresa VENDEDORA, concede uma Garantia Contratual do fabricante, ao equipamento por 12 (doze) meses ou 1000 horas (o que ocorrer primeiro), para motores, transmissões, eixos, componentes hidráulicos e estruturais, e de 6 (seis) meses para os demais itens, incluindo vedações de componentes, a contar da Nota Fiscal de entrega do equipamento.
+Para a vigência da Garantia, o equipamento deverás ser submetido à inspeção obrigatória de acordo com o plano de manutenção do equipamento constante no ANEXO I e no Manual do Operador, além das Manutenções Preventivas Obrigatórias e Trocas de óleos, filtros e lubrificantes, nos termos do presente Termo de Garantia.
+A Garantia não cobre custos referentes a reboque, remoção, deslocamento de técnico e KM rodado, imobilização pelo tempo necessário à reparação e manutenção regulares.
+Quando da execução das manutenções preventivas obrigatórias, o adquirente deverá entrar em contato com a empresa para abertura da Ordem de Serviço, a empresa acionará à Assistência Técnica Autorizada para efetuar essa manutenção. No caso das trocas de Óleos, Filtros e Lubrificantes, será necessária a comprovação da aquisição dos componentes genuínos mediante apresentação da respectiva Nota Fiscal emitida pela empresa ou pela Autorizada desde que as peças sejam genuínas.
+A Garantia somente será válida mediante (I) a observância de todas as instruções contidas no Manual de Operação; (II) a manutenção da originalidade do equipamento; (III) a apresentação dos documentos comprobatórios da realização das Manutenções Preventivas Obrigatórias, nos intervalos indicados neste Termo de Garantia e da utilização dos filtros originais, óleos, graxas e líquidos refrigerantes recomendados pela empresa.
+As peças substituídas durante o período de vigência da Garantia passam a ser de propriedade exclusiva da empresa.
+A correção dos defeitos será feita de acordo com os critérios e ações técnicas definidas exclusivamente pela empresa.
+A Garantia de uma peça reparada ou substituída gratuitamente durante o período de Garantia terminará juntamente com o prazo normal de Garantia do equipamento, não havendo extensão deste prazo original.
+As peças genuínas adquiridas na empresa, ou nas Assistências Técnicas Autorizadas, terão Garantia de 90 (noventa) dias contra defeitos de fabricação a contar da data da instalação da peça pela Assistência Técnica Autorizada, mediante Ordem de Serviço assinada pelo cliente.
+A Garantia das peças genuínas é válida somente se a peça for aplicada em um equipamento novo comercializado pela empresa e que não funcione em conjunto com peças não genuínas.
+Para a análise da procedência da garantia, a peça deverá ser encaminhada para avaliação da empresa VENDEDORA.
+O adquirente está ciente que qualquer alteração na aplicação e/ou no local de uso pode ter consequências negativas no desempenho do equipamento (inclusive desgastes prematuros dos componentes). Para alterações de aplicação e/ou local de uso, o proprietário deverá consultar previamente a empresa, a fim de obter a devida autorização, sob pena de perda de Garantia.
+09. O proprietário está ciente que qualquer alteração, adaptação, implementação e quaisquer outras modificações no equipamento após a entrega dele, ou a instalação de acessórios não genuínos, afetam significativamente o desempenho do equipamento e podem causar danos nos componentes, bem como oferecer riscos de segurança. Portanto, o proprietário deverá consultar previamente a empresa VENDEDORA, sob pena de perda da Garantia.
+A GARANTIA NÃO COBRE:
+Peças, componentes ou acessórios, tais como pneus, câmaras de ar e outros, que não são fornecidos/fabricados pela empresa, o proprietário está ciente que deverá reclamar a Garantia diretamente junto aos fabricantes destes componentes, incluindo assistência técnica e peças de reposição.
+Custos de peças instaladas e/ou serviços executados por terceiros que não são Assistências Técnicas Autorizadas.
+Custos adicionais decorrentes de dificuldades de acesso aos componentes genuínos, inclusive àqueles provenientes de alterações, instalações, adaptações, implementações e/ou modificações executadas por terceiros no equipamento.
+Corrosão de componentes devido à falta de manutenção, má conservação, falta de limpeza, falta de lubrificação, agentes externos e/ou problemas decorrentes de instalação não certificada ou autorizada.
+Itens de desgaste natural, consumo e manutenção normal, como por exemplo: elementos filtrantes, correias, pastilhas e discos de freios, pneus, dentes, sapatas, links, material rodante de escavadeira, lâminas,
+caçambas, pinos e buchas, rolamentos de torre, correntes, lâmpadas, fusíveis, ou componentes foram constatados quebrados por agentes externos.
+Regulagens que fazem parte da manutenção normal do equipamento como por exemplo: regulagens de válvulas, bombas, calibrações e outros.
+Danos e avarias provenientes de peças e/ou componentes do equipamento que tenham sido submetidos a qualquer tipo de alteração técnica sem a autorização prévia e por escrito da empresa.
+Pagamento ou qualquer outra forma de compensação decorrentes de quaisquer defeitos e/ou danos ocasionados ao equipamento, operador e a terceiros, tais como: lucros cessantes/perda de benefícios; danos indiretos; danos morais; deslocamentos; despesas de hotel; transporte de equipamento(s); içamento; combustível para testes; telefonemas.
+Quaisquer despesas ou custos relacionados a eventuais paralisações do equipamento (exemplos: paradas programadas ou não, manutenções, reparos necessários ou outros eventos como execução de campanhas emitidas pela empresa.
+A GARANTIA NÃO COBRE FALHAS E DANOS DECORRENTES DE:
+Não cumprimento das instruções contidas no presente Termo de Garantia e no Manual do Operador que acompanham o equipamento.
+Não realização de manutenções preventivas indicadas neste Termo de Garantia e no Manual do Operador, dentro dos intervalos preconizados.
+Não        realização        das        Manutenções        Preventivas        Obrigatórias        por Assistência Técnica Autorizada.
+Intervenções e reparos (incluindo ajuste e alteração de softwares, executadas fora das Assistências Técnicas Autorizadas.
+Utilização de peças e componentes não genuínos, fluidos, óleos, lubrificantes e filtros em geral.
+Utilização de óleos e combustível em desacordo com as especificações técnicas recomendadas pela empresa, conforme Manual do Operador que acompanha o equipamento.
+Modificação, alteração e/ou contaminação de combustível, líquido de arrefecimento e óleo utilizado, ou qualquer outro possível elemento de contaminação, em desacordo com a especificação técnica contida no Manual do Operador que acompanha o equipamento, inclusive combustíveis, óleos e fluídos vencidos.
+Utilização do equipamento em condições para a qual não foi projetado, tais como: esforço excessivo, excesso de carga/sobrecarga, competições etc.
+Falha operacional, insistência operacional ou agravados por insistência operacional e/ou profissional não habilitado.
+Alteração da aplicação do equipamento, sem a devida autorização por escrito da empresa.
+Instalação de superestruturas, adaptações, implementações e quaisquer outras modificações no equipamento após a realização da entrega devidamente verificada, inclusive instalação de rastreadores e imobilizadores, que não tenham sido projetadas/executadas/fornecidas pela empresa, bem como quaisquer danos ocasionados ao equipamento, ao operador e/ou a terceiros decorrentes de tais alterações.
+Acidentes, incêndios, eventos da natureza ou quaisquer outros fatores externos. Alguns exemplos: enchentes, raios, imersão total ou parcial do equipamento e seus componentes em água, descargas elétricas de qualquer natureza.
+O equipamento não terá direito à Garantia caso fique constatado que não foram realizadas todas as manutenções preventivas obrigatórias previstas neste Termo e no Manual do Operador.
+O equipamento que não atingir os períodos de revisão preventiva em até 6 (seis) meses de cada período, a substituição de todos os óleos e lubrificantes, são obrigatórias para a manutenção da validade desse contrato de garantia.
+A tolerância nos períodos de revisão, estão limitados à 10 % para mais ou para menos no horímetro do equipamento.
+Pendências Financeiras junto a EMPRESA, são impeditivos para o atendimento.
+As manutenções preventivas que não estiverem registradas na empresa serão consideradas como não executadas até que seja apresentada pelo proprietário a Nota Fiscal emitida pela empresa ou Assistência Técnica Autorizada, mediante Ordem de Serviço assinada pelo cliente.
+Os instrumentos de informação, advertência e alarme sonoro têm por finalidade proteger os componentes do equipamento, portanto a Garantia somente será concedida mediante a observação destes.
+A presente Garantia será aplicada desde que a empresa tenha acesso a todas as informações eletrônicas armazenadas nos Módulos de Controle Eletrônicos do equipamento.
+A empresa se reserva o direito de, a qualquer momento e sem aviso prévio, modificar, aperfeiçoar ou descontinuar quaisquer modelos de seus equipamentos, sem que seja devida qualquer compensação para o adquirente.
+A empresa se reserva ainda o direito de, a qualquer momento, atualizar a literatura técnica que acompanha o equipamento.
+A empresa não assume quaisquer responsabilidades ou obrigações além das definidas expressamente no presente Termo.
+CONTATOS ASSISTÊNCIA TÉCNICA
+Whatsapp (48) 48 9831-0069
+E-MAIL – pos-vendas@tlmequipamentos.com.br
+Cláusula 16ª. FORO
+Para dirimir quaisquer controvérsias oriundas do presente instrumento, as partes elegem o foro da comarca de Florianópolis - SC.
+Por estarem assim justas e contratadas, as partes firmam o presente instrumento, em duas vias de igual teor, juntamente com 2 (duas) testemunhas.
+Firmam este instrumento em duas vias de igual teor e forma, declarando plena ciência e concordância com todas as disposições deste contrato e do termo de garantia.
+Florianópolis, {{DATA_CONTRATO}}.
+BTI COMEX IMPORTAÇÃO, EXPORTAÇÃO E DISTRIBUIÇÃO LTDA VENDEDORA
+{{NOME_COMPRADOR}} COMPRADOR(A)
+Testemunha:________________________ CPF: ___________________ Testemunha:________________________ CPF: ___________________
